@@ -1,0 +1,17 @@
+CREATE DATABASE EcommerceDB;
+USE EcommerceDB;
+CREATE TABLE Customer (
+    CustomerID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Phone VARCHAR(15) UNIQUE,
+    Address VARCHAR(255) NOT NULL
+);
+CREATE TABLE Seller (
+    SellerID INT PRIMARY KEY,
+    SellerName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Phone VARCHAR(15) UNIQUE,
+    Address VARCHAR(255) NOT NULL
+);
